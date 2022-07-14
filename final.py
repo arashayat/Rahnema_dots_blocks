@@ -132,6 +132,6 @@ while(True):
         if playground.move(players[i], line[0], line[1], line[2]):
             winner = playground.calculateWinner(players)
             winner.wins+=1
-            print("winner is number: ", winner+1)
+            print("winner is number: ", winner.id+1)
 
 
