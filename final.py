@@ -119,7 +119,7 @@ players = []
 playground = Playground()
 playground.initialize(m, k)
 
-for i in range(n):
+for i in range(n): 
     players.append(Player(i))
 
 playground.showMap()
