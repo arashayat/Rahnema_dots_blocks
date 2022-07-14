@@ -91,7 +91,7 @@ class Playground:
         else:
             return False
     
-    def calculateWinner(players):
+    def calculateWinner(self, players):
         max = 0
         max_p = 0
         for i in players:
@@ -131,7 +131,7 @@ while(True):
         line = list(map(int, line))
         if playground.move(players[i], line[0], line[1], line[2]):
             winner = playground.calculateWinner(players)
-            players[winner].wins+=1
+            winner.wins+=1
             print("winner is number: ", winner+1)
 
 
